@@ -41,9 +41,21 @@ Edit this document to include your answers after each question. Make sure to lea
 
 3. What is closure?
 
+        A closure is the combination of a function bundled together (enclosed) with references to its surrounding state
+
+        To use a closure, you need to define a function inside another function and expose it. To expose a function, return it or pass it to another function.
+
+        The inner function will have access to the variables in the outer function scope, even after the outer function has returned.
+
 4. Describe the four rules of the 'this' keyword.
 
+        1. Global/window binding- makes a function that is called with a particular "this" value.
+        2. Implicit binding occurs when dot notation is used to invoke a function.
+        3. New Binding creates a blank, plain JavaScript object and Returns this if the function doesn't return.
+        4. Explicit binding of this occurs when .call(), .apply(), or .bind() are used on a function.
+
 5. Why do we need super() in an extended class?
+        super() in an extended class acts like the glue to holding together/binding the two classes.
 
 ## Project Set up
 
